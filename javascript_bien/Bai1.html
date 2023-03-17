@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="dauvao">
+    <select name="" id="select1">
+        <option value="vnd">VND</option>
+        <option value="usd">USD</option>
+    </select>
+<select name="" id="select2">
+    <option value="vnd">VND</option>
+    <option value="usd">USD</option>
+</select>
+<button onclick="nutAn()">Convert</button>
+<script>
+function nutAn(){
+    let giatrivao = document.getElementById('dauvao').value;
+    let select1 = document.getElementById('select1').value;
+    let select2 = document.getElementById('select2').value;
+
+    if (select1 == select2){
+        alert(giatrivao);
+    }
+    if (select1 == "vnd" && select2 == "usd") {
+        alert(giatrivao/24000);
+    }
+    if (select2 == "vnd" && select1 == "usd"){
+        alert(24000/giatrivao);
+    }
+}
+</script>
+</body>
+</html>
