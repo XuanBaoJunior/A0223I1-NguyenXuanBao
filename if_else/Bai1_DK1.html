@@ -7,14 +7,13 @@
 <body>
 <!--chua hoan thanh-->
 <script>
-    var num = prompt("Nhập số để kiểm tra có chia hết cho 2 hay không ?");
+    let a = prompt("Nhập số a");
+    let b = prompt("Nhập số b");
 
-    num = parseInt(num);
-
-    if (num % 2 == 0) {
-        document.write(num + ' chia hết cho 2');
+    if (a % b == 0) {
+        document.write('a chia hết cho b');
     } else {
-        document.write(num + ' không chia hết cho 2');
+        document.write('a không chia hết cho b');
     }
 </script>
 </body>

@@ -6,25 +6,22 @@
 </head>
 <body>
     <script>
-        let DiemBKT = prompt("Mời bạn nhập điểm bài kiểm tra");
-        let DiemGK = prompt("Mời bạn nhập điểm thi giữa kỳ");
-        let DiemCK = prompt("Mời bạn nhập điểm thi cuối kỳ");
+        let DiemBKT =parseInt(prompt("Mời bạn nhập điểm bài kiểm tra"));
+        let DiemGK = parseInt(prompt("Mời bạn nhập điểm thi giữa kỳ"));
+        let DiemCK = parseInt(prompt("Mời bạn nhập điểm thi cuối kỳ"));
 
         let DiemTB = (Number(DiemBKT) + Number(DiemGK * 2) + Number(DiemCK * 3)) / 6;
 
-        console.log(DiemTB.toFixed(1));
-        // alert("Điểm Trung Bình" +DiemTB);
-
-        if (DiemTB (>= 8) && )(<= 10)){
-            document.write("Là học sinh giỏi");
+        if (DiemTB (>= 8){
+            alert("Là học sinh giỏi");
         }else {
-            if (DiemTB (>= 6.5) && DiemTB (<=7.9)){
-                document.write("Là học sinh khá");
+            if (DiemTB <=7.9){
+                alert("Là học sinh khá");
             }else {
-                if (DiemTB (>= 6.5) && DiemTB (<= 5.0)){
-                    document.write("Là học sinh TB");
+                if (DiemTB <= 5.0){
+                    alert("Là học sinh TB");
                 }else {
-                    document.write("Là học sinh yếu");
+                    alert("Là học sinh yếu");
                 }
             }
         }
