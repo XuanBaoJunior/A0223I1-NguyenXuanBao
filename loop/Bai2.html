@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(num) {
+        for(var i = 2; i < num; i++)
+            if(num % i === 0) return false;
+        return num !== 1;
+    }
+
+    function displayPrimes(n) {
+        var primes = [];
+        var i = 2;
+        while (primes.length < n) {
+            if (isPrime(i)) {
+                primes.push(i);
+            }
+            i++;
+        }
+        alert(primes);
+    }
+
+    displayPrimes(20);
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function tinhGiaDien(soKwhTieuThu) {
+            let giaTien = 0;
+
+            if (soKwhTieuThu <= 50) {
+                giaTien = soKwhTieuThu * 1500;
+            } else if (soKwhTieuThu <= 100) {
+                giaTien = 50 * 1500 + (soKwhTieuThu - 50) * 2000;
+            } else if (soKwhTieuThu <= 200) {
+                giaTien = 50 * 1500 + 50 * 2000 + (soKwhTieuThu - 100) * 2500;
+            } else if (soKwhTieuThu <= 300) {
+                giaTien = 50 * 1500 + 50 * 2000 + 100 * 2500 + (soKwhTieuThu - 200) * 3000;
+            } else if (soKwhTieuThu <= 400) {
+                giaTien = 50 * 1500 + 50 * 2000 + 100 * 2500 + 100 * 3000 + (soKwhTieuThu - 300) * 3500;
+            } else {
+                giaTien = 50 * 1500 + 50 * 2000 + 100 * 2500 + 100 * 3000 + 100 * 3500 + (soKwhTieuThu - 400) * 4000;
+            }
+
+            return giaTien;
+        }
+
+        // Sử dụng chương trình
+        let soKwhTieuThu = prompt("Nhập số chữ");
+        let giaTien = tinhGiaDien(soKwhTieuThu);
+        alert(`Giá tiền điện của ${soKwhTieuThu} kWh là ${giaTien} đồng`);
+
+    </script>
+</body>
+</html>

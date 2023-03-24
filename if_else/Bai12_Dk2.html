@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Yêu cầu người dùng nhập vào thông tin vay tiền
+    let principal = prompt("Nhập số tiền ban đầu:");
+    let months = prompt("Nhập số tháng cho vay:");
+    let interestRate = prompt("Nhập lãi suất hàng tháng (%):");
+
+    // Chuyển đổi lãi suất từ phần trăm sang số thập phân
+    interestRate = interestRate / 100;
+
+    // Tính toán lãi suất hàng tháng và lãi suất tổng cộng
+    let monthlyInterestRate = interestRate / 12;
+    let totalInterest = 0;
+
+    for (let i = 0; i < months; i++) {
+        let interest = principal * monthlyInterestRate;
+        principal += interest;
+        totalInterest += interest;
+    }
+
+    // Hiển thị kết quả
+    document.write("<p>Kết quả tính toán lãi ngân hàng:</p>");
+    document.write("<p><strong>Số tiền ban đầu là:</strong> " + principal.toFixed(2) + " đồng.</p>");
+    document.write("<p><strong>Số tiền lãi tích luỹ là:</strong> " + totalInterest.toFixed(2) + " đồng.</p>");
+
+</script>
+</body>
+</html>

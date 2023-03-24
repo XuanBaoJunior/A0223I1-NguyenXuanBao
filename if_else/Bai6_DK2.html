@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Nhập các hệ số a và b từ người dùng
+    let a = parseFloat(prompt("Nhập hệ số a: "));
+    let b = parseFloat(prompt("Nhập hệ số b: "));
+
+    // Kiểm tra điều kiện a khác 0
+    if (a !== 0) {
+        // Tính nghiệm x
+        let x = -b / a;
+
+        // Hiển thị nghiệm phương trình
+        alert("Nghiệm của phương trình " + a + "x + " + b + " = 0 là: " + x);
+    } else {
+        // Thông báo nếu a = 0
+        alert("Hệ số a phải khác 0.");
+    }
+
+</script>
+</body>
+</html>
