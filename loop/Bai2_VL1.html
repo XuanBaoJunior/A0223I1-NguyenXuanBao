@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var temperature = null;
+
+    while (temperature === null || isNaN(temperature) || temperature === "") {
+        temperature = prompt("Nhập nhiệt độ hiện tại: ");
+
+        if (temperature > 100) {
+            alert("Nhiệt độ quá cao! Vui lòng giảm nhiệt độ.");
+            temperature = null;
+        } else if (temperature < 20) {
+            alert("Nhiệt độ quá thấp! Vui lòng tăng nhiệt độ.");
+            temperature = null;
+        } else {
+            alert("Nhiệt độ trong khoảng bình thường.");
+        }
+    }
+
+</script>
+</body>
+</html>
