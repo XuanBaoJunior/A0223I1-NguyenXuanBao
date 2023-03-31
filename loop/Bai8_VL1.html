@@ -5,6 +5,38 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    // chuahoanthanh
 
+        let max = parseInt(prompt("Nhập giá trị lớn nhất trong khoảng số bạn muốn đoán"));
+        let min = parseInt(prompt("Nhập giá trị nhỏ nhất trong khoảng số bạn muốn đoán"));
+        let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+        let remainingGuesses = 3;
+        let isWinner = false;
+
+        while (remainingGuesses > 0) {
+            let guess = parseInt(prompt(`Bạn còn ${remainingGuesses} lượt đoán. Nhập giá trị đoán của bạn:`));
+
+            if (guess === randomNum) {
+                isWinner = true;
+                alert(`Chúc mừng! Bạn đoán đúng số là ${randomNum}.`);
+                break;
+            } else {
+                remainingGuesses--;
+                if (guess < randomNum) {
+                    alert(`Số bạn đoán (${guess}) nhỏ hơn số đúng.`);
+                } else {
+                    alert(`Số bạn đoán (${guess}) lớn hơn số đúng.`);
+                }
+            }
+        }
+
+        if (!isWinner) {
+            alert(`Rất tiếc, bạn đã hết lượt đoán. Số đúng là ${randomNum}.`);
+        }
+
+
+
+</script>
 </body>
 </html>

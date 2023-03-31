@@ -5,6 +5,79 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    function inTamGiacVuong(gocVuong, chieuCao, viTri) {
+        switch (viTri) {
+            case 'tren-trai':
+                for (let i = 1; i <= chieuCao; i++) {
+                    let row = '';
 
+                    for (let j = 1; j <= i; j++) {
+                        row += gocVuong + ' ';
+                    }
+
+                    console.log(row);
+                }
+                break;
+
+            case 'tren-phai':
+                for (let i = 1; i <= chieuCao; i++) {
+                    let row = '';
+
+                    for (let j = 1; j <= chieuCao - i; j++) {
+                        row += ' ';
+                    }
+
+                    for (let j = 1; j <= i; j++) {
+                        row += gocVuong + ' ';
+                    }
+
+                    console.log(row);
+                }
+                break;
+
+            case 'duoi-trai':
+                for (let i = 1; i <= chieuCao; i++) {
+                    let row = '';
+
+                    for (let j = 1; j <= i; j++) {
+                        row += gocVuong;
+                    }
+
+                    console.log(row);
+                }
+                break;
+
+            case 'duoi-phai':
+                for (let i = 1; i <= chieuCao; i++) {
+                    let row = '';
+
+                    for (let j = 1; j <= chieuCao - i; j++) {
+                        row += ' ';
+                    }
+
+                    for (let j = 1; j <= i; j++) {
+                        row += gocVuong;
+                    }
+
+                    console.log(row);
+                }
+                break;
+
+            default:
+                console.log('Vị trí không hợp lệ.');
+                break;
+        }
+    }
+
+    inTamGiacVuong('*', 5, 'tren-trai');
+    console.log('----------');
+    inTamGiacVuong('*', 5, 'tren-phai');
+    console.log('----------');
+    inTamGiacVuong('*', 5, 'duoi-trai');
+    console.log('----------');
+    inTamGiacVuong('*', 5, 'duoi-phai');
+
+</script>
 </body>
 </html>
