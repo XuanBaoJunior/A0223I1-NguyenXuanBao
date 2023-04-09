@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = [5, 10, 15, 20, 25];
+
+    let max = Math.max(...numbers);
+    console.log("Giá trị lớn nhất trong mảng là: " + max);
+
+    let sum = 0;
+    for(let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    let average = sum / numbers.length;
+    console.log("Giá trị trung bình của các phần tử trong mảng là: " + average);
+</script>
+</body>
+</html>

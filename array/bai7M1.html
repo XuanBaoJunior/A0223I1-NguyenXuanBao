@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const ARRAY_SIZE = 10;
+    let array = [];
+
+    function isInArray(array, V) {
+        for (let i = 0; i < ARRAY_SIZE; i++) {
+            if (array[i] === V) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function removeValueFromArray(array, V) {
+        const pos = array.indexOf(V);
+        if (pos !== -1) {
+            array.splice(pos, 1);
+            array.push(0);
+        }
+    }
+
+    for (let i = 0; i < ARRAY_SIZE; i++) {
+        array.push(parseInt(prompt(`Nhap gia tri thu ${i+1}`)));
+    }
+
+    const V = parseInt(prompt("Nhap gia tri V"));
+
+    if (isInArray(array, V)) {
+        removeValueFromArray(array, V);
+        console.log(`Gia tri ${V} da duoc xoa khoi mang`);
+    } else {
+        console.log(`Gia tri ${V} khong thuoc mang`);
+    }
+
+    console.log(array);
+
+</script>
+</body>
+</html>

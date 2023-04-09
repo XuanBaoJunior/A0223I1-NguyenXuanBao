@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  const charArray = ['1', '2', '3', 'a', 'b', 'c', '4', '5', '6'];
+
+  const arrayLength = charArray.length;
+
+  let numCount = 0;
+
+  for (let i = 0; i < arrayLength; i++) {
+    // Sử dụng hàm isNan để kiểm tra xem ký tự có phải là số hay không
+    if (!isNaN(charArray[i])) {
+      numCount++;
+    }
+  }
+
+  console.log(`Số lượng ký tự số trong mảng là: ${numCount}`);
+
+</script>
+</body>
+</html>

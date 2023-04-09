@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [];
+  for (let i = 0; i < 10; i++) {
+
+    arr.push(parseInt(prompt(`Nhập số nguyên vào mảng ${i+1}:`)));
+  }
+
+  let v = parseInt(prompt("Nhập vào một số nguyên để tìm kiếm:"));
+  let isFound = false;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === v) {
+      isFound = true;
+      break;
+    }
+  }
+
+  if (isFound) {
+    console.log(`${v} is in the array`);
+  } else {
+    console.log(`${v} is not in the array`);
+  }
+
+</script>
+</body>
+</html>

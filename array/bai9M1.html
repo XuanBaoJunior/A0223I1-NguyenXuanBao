@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = new Array(10);
+    for (let i = 0; i < a.length; i++) {
+        a[i] = parseInt(prompt("Nhập giá trị cho mảng a tại vị trí " + i));
+    }
+
+    let b = new Array(10);
+    for (let i = 0; i < b.length; i++) {
+        b[i] = parseInt(prompt("Nhập giá trị cho mảng b tại vị trí " + i));
+    }
+
+    let c = new Array(20);
+    for (let i = 0; i < a.length; i++) {
+        c[i] = a[i];
+    }
+    for (let i = 0; i < b.length; i++) {
+        c[i + a.length] = b[i];
+    }
+    s
+    console.log("Mảng c sau khi nối là:");
+    console.log(c);
+
+</script>
+</body>
+</html>

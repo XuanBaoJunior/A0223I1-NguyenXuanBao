@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = prompt("Nhập vào một mảng ký tự:").split('');
+
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] === '-') {
+            arr[i] = '_';
+        }
+    }
+    //sử dụng phương thức join('') để chuyển mảng ký tự thành chuỗi và in ra mảng ký tự sau khi đã thay thế
+    console.log("Mảng ký tự sau khi thay thế:", arr.join(''));
+
+</script>
+
+</body>
+</html>

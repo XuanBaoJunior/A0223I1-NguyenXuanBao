@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const englishWords = ["apple", "banana", "orange", "grape", "mango"];
+
+    const vietnameseWords = ["quả táo", "quả chuối", "quả cam", "quả nho", "xoài"];
+
+    const searchValue = prompt("Nhập từ tiếng Anh cần tìm kiếm:");
+
+    const index = englishWords.indexOf(searchValue.toLowerCase());
+
+    if (index !== -1) {
+        const vietnameseWord = vietnameseWords[index];
+        alert(vietnameseWord);
+    } else {
+        alert("Không tìm thấy từ");
+    }
+</script>
+</body>
+</html>
