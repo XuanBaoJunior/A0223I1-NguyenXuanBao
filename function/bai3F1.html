@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function compareAndAdd() {
+        let num1 = parseFloat(prompt("Nhập giá trị tham số thứ nhất:"));
+        let num2 = parseFloat(prompt("Nhập giá trị tham số thứ hai:"));
+
+        if (num1 > num2) {
+            alert("Giá trị tham số thứ nhất lớn hơn tham số thứ hai");
+        } else {
+            return num1 + num2;
+        }
+    }
+
+    let result = compareAndAdd();
+
+    if (result !== undefined) {
+        console.log("Tổng của hai tham số là: " + result);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPositiveInteger(number) {
+        if (Number.isInteger(number) && number > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    console.log(isPositiveInteger(5));
+    console.log(isPositiveInteger(-3));
+    console.log(isPositiveInteger(2.5));
+
+</script>
+</body>
+</html>

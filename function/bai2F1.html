@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tăng giá trị số lên 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #result {
+      margin-top: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<h1>Tăng giá trị số lên 1</h1>
+<form>
+  <label for="inputNumber">Nhập số cần tăng:</label>
+  <input type="number" id="inputNumber" name="inputNumber" value="0">
+  <br>
+  <button type="button" onclick="increaseNumber()">Tăng lên 1</button>
+</form>
+<div id="result"></div>
+
+<script>
+  function increaseNumber() {
+    let num = parseInt(document.getElementById("inputNumber").value);
+    let increasedNum = num + 1;
+    document.getElementById("result").innerHTML = "Giá trị đầu vào: " + num + "<br>" + "Giá trị sau khi tăng lên 1 là: " + increasedNum;
+  }
+</script>
+</body>
+</html>
