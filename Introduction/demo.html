@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Student(id, name, address) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.getInfor = function () {
+            return "Id" + this.id + " Name" + this.name + "address" + this.address;
+        }
+    }
+    let student = new Student(1, "Nguyen Xuan Bao", "QT");
+    console.log(student.getInfor());
+</script>
+</body>
+</html>

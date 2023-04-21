@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(celsius) {
+            this.celsius = celsius;
+        }
+
+        toFahrenheit() {
+            return this.celsius * 1.8 + 32;
+        }
+
+        toKelvin() {
+            return this.celsius + 273.15;
+        }
+    }
+
+    // Sử dụng đối tượng Temperature để chuyển đổi đơn vị nhiệt độ
+    let temp = new Temperature(25);
+    let fahrenheit = temp.toFahrenheit();
+    let kelvin = temp.toKelvin();
+
+    console.log(`Nhiệt độ ${temp.celsius} độ C tương đương với ${fahrenheit} độ F và ${kelvin} độ K.`);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas"></canvas>
+<script>
+    class Rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        get area() {
+            return this.length * this.width;
+        }
+
+        get perimeter() {
+            return 2 * (this.length + this.width);
+        }
+
+        draw() {
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+            ctx.fillRect(0, 0, this.width, this.length);
+        }
+
+        setDimensions(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+    }
+    // Khai báo và khởi tạo một đối tượng kiểu Rectangle.
+    const rectangle = new Rectangle(400, 200);
+
+    // Hiển thị hình chữ nhật trên màn hình web.
+    rectangle.draw();
+
+    // Thay đổi chiều dài và chiều rộng của hình chữ nhật.
+    rectangle.setDimensions(2000, 700);
+
+    // In ra màn hình diện tích và chu vi của hình chữ nhật đó.
+    console.log(`DienTich: ${rectangle.area}`);
+    console.log(`Chuvi: ${rectangle.perimeter}`);
+
+</script>
+</body>
+</html>
