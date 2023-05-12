@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt("Nhập kích thước của mảng")
+    let array = [];
+    let arrayNguyenTo = [];
+    for (let i = 0; i < number;i++){
+        array[i] = +prompt('nhập phần tử vào mảng ' +(i+1));
+        if (CheckSoNguyenTo(array[i])){
+            arrayNguyenTo.push(array[i]);
+        }
+    }
+    console.log("Mảng khi nhập vào: "+array.join());
+    console.log("Mảng số nguyên tố là: "+arrayNguyenTo.join());
+    function CheckSoNguyenTo(n) {
+        if(n < 2){
+            return false;
+        }
+        for (let i = 0 ; i <= Math.sqrt(n);i++){
+            if(n % 2 === 0 ){
+                return false;
+            }
+        }
+        return  true;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isWaveArray(arr) {
+        if (arr.length < 3) {
+            return false;
+        }
+        arr.sort();
+
+        for (let i = 1; i < arr.length - 1; i += 2) {
+            if (arr[i] === arr[i-1] || arr[i] === arr[i+1]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    const arr1 = [1, 2, 3, 4, 3, 2, 1];
+    const arr2 = [1, 2, 3, 2, 1];
+    const arr3 = [1, 2, 3, 4, 5];
+
+    console.log(isWaveArray(arr1));
+    console.log(isWaveArray(arr2));
+    console.log(isWaveArray(arr3));
+
+</script>
+</body>
+</html>

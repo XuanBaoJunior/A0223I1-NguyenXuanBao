@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin chủ sở hữu xe</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1>Thông tin chủ sở hữu xe</h1>
+<form>
+    <label for="license-plate">Biển số:</label>
+    <input type="text" id="license-plate" name="license-plate"><br>
+
+    <label for="id-number">Căn cước công dân:</label>
+    <input type="text" id="id-number" name="id-number"><br>
+
+    <label for="dob">Năm sinh:</label>
+    <input type="text" id="dob" name="dob"><br>
+
+    <label for="name">Tên:</label>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="address">Chỗ ở:</label>
+    <input type="text" id="address" name="address"><br>
+
+    <input type="button" value="Lưu thông tin" onclick="saveOwnerInfo()">
+</form>
+
+<br>
+
+<table id="owner-info-table">
+    <thead>
+    <tr>
+        <th>Biển số</th>
+        <th>Căn cước công dân</th>
+        <th>Năm sinh</th>
+        <th>Tên</th>
+        <th>Chỗ ở</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script>
+    // Định nghĩa đối tượng OwnerInfo
+    function OwnerInfo(licensePlate, idNumber, dob, name, address) {
+        this.licensePlate = licensePlate;
+        this.idNumber = idNumber;
+        this.dob = dob;
+        this.name = name;
+        this.address = address;
+    }
+
+    // Mảng chứa danh sách chủ sở hữu xe
+    var ownerInfoList = [];
+
+    // Hàm lưu thông tin chủ sở hữu xe
+    function saveOwnerInfo() {
+        var licensePlate = document.getElementById("license-plate").value;
+        var idNumber = document.getElementById("id-number").value;
+        var dob = document.getElementById("dob").value;
+        var name = document.getElementById("name").value;
+        var address = document.getElementById("address").value;
+
+        // Tạo một đối tượng OwnerInfo mới
+        var ownerInfo = new OwnerInfo(licensePlate, idNumber, dob, name, address);
+
+        // Thêm đối tượng vào danh sách chủ sở hữu xe
+        ownerInfoList.push(ownerInfo);
+
+        // Cập nhật bảng hiển thị
+        updateOwnerInfoTable();
+    }
+
+    // Hàm xóa chủ sở hữu xe khỏi danh sách
+    function deleteOwnerInfo(index) {
+        ownerInfoList.splice(index, 1);
+
+        // Cập nhật bảng hiển thị
+        updateOwnerInfoTable();
+    }
+
+</script>
+</body>
+</html>

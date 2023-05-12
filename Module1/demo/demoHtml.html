@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="id" placeholder="Nhập id">
+<input type="text" id="name" placeholder="Nhập hãng xe">
+<input type="text" id="country" placeholder="Nhập nước sản xuất">
+<button onclick="addHangXe()">Add</button>
+<p id="result"></p>
+<script>
+    class HangXe {
+        constructor(id, name, country) {
+            this.id = id;
+            this.name = name;
+            this.country = country;
+        }
+
+        setId(id) {
+            this.id = id;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        setCountry(country) {
+            this.country = country;
+        }
+
+        getId() {
+            return this.id;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getCountry() {
+            return this.country;
+        }
+    }
+
+    let hangxeList = [];
+    let hangxe1 = new HangXe(1, "Toyota", "Japan");
+    let hangxe2 = new HangXe(2, "Posche", "Italia");
+    hangxeList.push(hangxe1, hangxe2);
+    display(hangxeList);
+
+    function deleteHangXe(index) {
+        let xoa = confirm("Đồng ý xóa: " + hangxeList[index].getName())
+        if (xoa) {
+            hangxeList.splice(index, 1);
+        }
+        display(hangxeList);
+    }
+
+    function addHangXe(){
+        let id = document.getElementById("id").value;
+        let name = document.getElementById("name").value;
+        let country = document.getElementById("country").value;
+        let newHangXe = new HangXe(id, name, country);
+        hangxeList.push(newHangXe);
+        document.getElementById("id").value = "";
+        document.getElementById("name").value = "";
+        document.getElementById("country").value = "";
+        display(hangxeList);
+    }
+
+    function display(list) {
+        let tableString = '<table border="1" style="border-collapse: collapse">\n' +
+            ' <tr>\n' +
+            ' <th>STT</th>\n' +
+            '  <th>ID</th>\n' +
+            ' <th>Name</th>\n' +
+            '  <th>Coutry</th>\n' +
+            '  <th>Delete</th>\n' +
+            ' </tr>';
+        for (let i = 0; i < list.length; i++) {
+            tableString += '<tr>\n' +
+                '<td>' + (i + 1) + '</td>\n' +
+                '<td>' + list[i].getId() + '</td>\n' +
+                '<td>' + list[i].getName() + '</td>\n' +
+                '<td>' + list[i].getCountry() + '</td>\n' +
+                '<td><button onclick="deleteHangXe('+i+')">Delete</button></td>\n' +
+                '</tr>'
+        }
+        tableString += '</table>';
+        document.getElementById("result").innerHTML = tableString;
+    }
+</script>
+</body>
+</html>

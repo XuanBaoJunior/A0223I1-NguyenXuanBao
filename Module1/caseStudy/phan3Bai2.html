@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function missingValue(a, b) {
+    let missing = [];
+
+    let soSanh = {};
+
+    for (let i = 0; i < a.length; i++) {
+      soSanh[a[i]] = true;
+    }
+
+    for (let i = 0; i < b.length; i++) {
+      if (!soSanh[b[i]]) {
+        missing.push(b[i]);
+
+        soSanh[b[i]] = true;
+      }
+    }
+
+    return missing;
+  }
+
+  let A = [7, 2, 5, 3, 5, 3];
+  let B = [7, 2, 5, 4, 6, 3, 5, 3];
+  let result = missingValue(A, B);
+
+  console.log(result);
+
+</script>
+</body>
+</html>

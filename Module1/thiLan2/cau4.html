@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input onblur="checkId()" type="text" id="masanpham" placeholder="Nhập id"> <span id="error_id"></span>
+<br>
+<input type="text" id="tensanpham" placeholder="Nhập hãng xe">
+<br>
+<input type="text" id="hangsanxuat" placeholder="Nhập nước sản xuất">
+<br>
+<input onblur="checkGia()" type="text" id="gia" placeholder="Nhập giá"> <span id="error_gia"></span>
+<br>
+<button onclick="addSanPham()">Add</button>
+<p id="result"></p>
+<script>
+    class SanPham {
+        constructor(masanpham, tensanpham, hangsanxuat, gia) {
+            this.masanpham = masanpham;
+            this.tensanpham = tensanpham;
+            this.hangsanxuat = hangsanxuat;
+            this.gia = gia;
+        }
+
+        setMasanpham(masanpham) {
+            this.masanpham = masanpham;
+        }
+
+        setTensanpham(tensanpham) {
+            this.tensanpham = tensanpham;
+        }
+
+        setHangsanxuat(hangsanxuat) {
+            this.hangsanxuat = hangsanxuat;
+        }
+
+        setGia(gia) {
+            this.gia = gia;
+        }
+
+        getMasanpham() {
+            return this.masanpham;
+        }
+
+        getTensanpham() {
+            return this.tensanpham;
+        }
+
+        getHangsanxuat() {
+            return this.hangsanxuat;
+        }
+
+        getGia() {
+            return this.gia;
+        }
+    }
+
+    let sanphamList = [];
+    let sanpham1 = new SanPham(1, "Toyota", "Japan", 10000);
+    let sanpham2 = new SanPham(2, "Posche", "Italia", 1000);
+    sanphamList.push(sanpham1, sanpham2);
+    display(sanphamList);
+
+    function checkGia(){
+        let id = document.getElementById('gia').value;
+        let check_error_id = document.getElementById('error_gia');
+        if( id == "" || id == null || isNaN(id)){
+            check_error_id.innerHTML = "<span style='color: red'> Giá sai cú pháp</span>";
+            return false;
+        }else{
+            check_error_id.innerHTML = "";
+            return id;
+        }
+    }
+
+    function checkId(){
+        let id = document.getElementById('masanpham').value;
+        let check_error_id = document.getElementById('error_id');
+        if( id == "" || id == null ||  id.length >= 6 || isNaN(id)){
+            check_error_id.innerHTML = "<span style='color: red'> Id sai cú pháp</span>";
+            return false;
+        }else{
+            check_error_id.innerHTML = "";
+            return id;
+        }
+    }
+    function deleteSanPham(index) {
+        let xoa = confirm("Đồng ý xóa: " + sanphamList[index].getMasanpham())
+        if (xoa) {
+            sanphamList.splice(index, 1);
+        }
+        display(sanphamList);
+    }
+
+    function addSanPham() {
+        let masanpham = document.getElementById("masanpham").value;
+        let tensanpham = document.getElementById("tensanpham").value;
+        let hangsanxuat = document.getElementById("hangsanxuat").value;
+        let gia = document.getElementById("gia").value;
+        let newSanPham = new SanPham(masanpham, tensanpham, hangsanxuat, gia);
+        sanphamList.push(newSanPham);
+        document.getElementById("masanpham").value = "";
+        document.getElementById("tensanpham").value = "";
+        document.getElementById("hangsanxuat").value = "";
+        document.getElementById("gia").value = "";
+        display(sanphamList);
+    }
+
+    function display(list) {
+        let tableString = '<table border="1" style="border-collapse: collapse">\n' +
+            ' <tr>\n' +
+            ' <th>STT</th>\n' +
+            '  <th>Ma san pham</th>\n' +
+            ' <th>Ten san pham</th>\n' +
+            '  <th>Hang san xuat</th>\n' +
+            '  <th>Gia</th>\n' +
+            '  <th>Delete</th>\n' +
+            ' </tr>';
+        for (let i = 0; i < list.length; i++) {
+            tableString += '<tr>\n' +
+                '<td>' + (i + 1) + '</td>\n' +
+                '<td>' + list[i].getMasanpham() + '</td>\n' +
+                '<td>' + list[i].getTensanpham() + '</td>\n' +
+                '<td>' + list[i].getHangsanxuat() + '</td>\n' +
+                '<td>' + list[i].getGia() + '</td>\n' +
+                '<td><button onclick="deleteSanPham(' + i + ')">Delete</button></td>\n' +
+                '</tr>'
+        }
+        tableString += '</table>';
+        document.getElementById("result").innerHTML = tableString;
+    }
+</script>
+</body>
+</html>

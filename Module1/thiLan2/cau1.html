@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const m1 = ["a", "b", "c", "d", "e", "f", "g"];
+
+    const m2 = ["-2", "7", "8", "19", "17", "22", "3", "5"];
+
+    const search = prompt("Nhập từ cần tìm kiếm:");
+
+    const index = m1.indexOf(search.toLowerCase());
+
+    if (index !== -1) {
+        const m = m2[index];
+        alert(m);
+    } else {
+        alert("Không tìm thấy từ");
+    }
+</script>
+</body>
+</html>

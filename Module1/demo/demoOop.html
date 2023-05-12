@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="id" placeholder="Nhập id">
+<input type="text" id="name" placeholder="Nhập tên">
+<input type="text" id="company" placeholder="Nhập hãng xe">
+<button onclick="addEmployee()">Add</button>
+<p id="result"></p>
+<script>
+    class Employee {
+        constructor(id, name, company) {
+            this.id = id;
+            this.name = name;
+            this.company = company;
+        }
+
+        setId(id) {
+            this.id = id;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        setCompany(company) {
+            this.company = company;
+        }
+
+        getId() {
+            return this.id;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getCompany() {
+            return this.company;
+        }
+    }
+
+    let employeeList = [];
+    let employee1 = new Employee(1, "Phi Long", "Kia");
+    let employee2 = new Employee(2, "Quang Anh", "Mazda");
+    employeeList.push(employee1, employee2);
+    display(employeeList);
+
+    function addEmployee() {
+        let id = document.getElementById("id").value;
+        let name = document.getElementById("name").value;
+        let company = document.getElementById("company").value;
+        let newEmployee = new Employee(id, name, company);
+        employeeList.push(newEmployee);
+        document.getElementById("id").value = "";
+        document.getElementById("name").value = "";
+        document.getElementById("company").value = "";
+        display(employeeList);
+
+    }
+    function deleteEmployee(index) {
+        let conf= confirm("bạn có muốn xoá nhân viên : "+ employeeList[index].getName())
+        if (conf){
+            employeeList.splice(index,1);
+        }
+        display(employeeList);
+    }
+
+    function display(list) {
+        let tableString = '<table border="1" style="border-collapse: collapse">\n' +
+            '    <tr>\n' +
+            '        <th>STT</th>\n' +
+            '        <th>ID</th>\n' +
+            '        <th>Name</th>\n' +
+            '        <th>Company</th>\n' +
+            '        <th>Edit</th>\n' +
+            '        <th>Delete</th>\n' +
+            '    </tr>';
+        for (let i = 0; i < list.length; i++) {
+            tableString += ' <tr>\n' +
+                '        <td>' + (i + 1) + '</td>\n' +
+                '        <td>' + list[i].getId() + '</td>\n' +
+                '        <td>' + list[i].getName() + '</td>\n' +
+                '        <td>' + list[i].getCompany() + '</td>\n' +
+                '        <td><button>Edit</button></td>\n' +
+                '        <td><button onclick="deleteEmployee('+i+')">Delete</button></td>\n' +
+                '    </tr>'
+        }
+        tableString += '</table>';
+        document.getElementById("result").innerHTML = tableString;
+    }
+</script>
+</body>
+</html>

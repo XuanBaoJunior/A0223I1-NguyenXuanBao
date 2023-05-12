@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<input type="text" id="name" placeholder="Nhập tên">
+<input type="text" id="bienso" placeholder="Nhập biển số xe">
+<input type="text" id="namsinh" placeholder="Nhập năm sinh">
+<input type="text" id="cccd" placeholder="Nhập căn cước công dân">
+<input type="text" id="choo" placeholder="Nhập chỗ ở">
+<button onclick="addHangXe()">Add</button>
+<p id="result"></p>
+<script>
+  class HangXe {
+    constructor(name, bienso, namsinh, cccd, choo) {
+      this.name = name;
+      this.bienso = bienso;
+      this.namsinh = namsinh;
+      this.cccd = cccd;
+      this.choo = choo;
+    }
+
+    setName(name) {
+      this.name = name;
+    }
+
+    setBienso(bienso) {
+      this.bienso = bienso;
+    }
+
+    setNamsinh(namsinh) {
+      this.namsinh = namsinh;
+    }
+
+    setCccd(cccd) {
+      this.cccd = cccd;
+    }
+
+    setChoo(choo) {
+      this.choo = choo;
+    }
+
+    getName() {
+      return this.name;
+    }
+
+    getBienso() {
+      return this.bienso;
+    }
+
+    getNamsinh() {
+      return this.namsinh;
+    }
+
+    getCccd() {
+      return this.cccd;
+    }
+
+    getChoo() {
+      return this.choo;
+    }
+  }
+
+  let hangxeList = [];
+  let hangxe1 = new HangXe("Nguyen Van A", "29H-12345", "1990", "123456789", "Ha Noi");
+  let hangxe2 = new HangXe("Tran Thi B", "30G-67890", "1995", "987654321", "Ho Chi Minh");
+  hangxeList.push(hangxe1, hangxe2);
+  display(hangxeList);
+
+  function deleteHangXe(index) {
+    let xoa = confirm("Đồng ý xóa: " + hangxeList[index].getName())
+    if (xoa) {
+      hangxeList.splice(index, 1);
+    }
+    display(hangxeList);
+  }
+
+  function addHangXe() {
+    let name = document.getElementById("name").value;
+    let bienso = document.getElementById("bienso").value;
+    let namsinh = document.getElementById("namsinh").value;
+    let cccd = document.getElementById("cccd").value;
+    let choo = document.getElementById("choo").value;
+    let newHangXe = new HangXe(name, bienso, namsinh, cccd, choo);
+    hangxeList.push(newHangXe);
+    document.getElementById("name").value = "";
+    document.getElementById("bienso").value = "";
+    document.getElementById("namsinh").value = "";
+    document.getElementById("cccd").value = "";
+    document.getElementById("choo").value = "";
+    display(hangxeList);
+  }
+    function display(list) {
+      let tableString = '<table border="1" style="border-collapse: collapse">\n' +
+              ' <tr>\n' +
+              ' <th>STT</th>\n' +
+              '  <th>Tên</th>\n' +
+              ' <th>Biển số</th>\n' +
+              '  <th>Năm sinh</th>\n' +
+              '  <th>CCCD</th>\n' +
+              '  <th>Chổ ở</th>\n' +
+              '  <th>Delete</th>\n' +
+              ' </tr>';
+      for (let i = 0; i < list.length; i++) {
+        tableString += '<tr>\n' +
+                '<td>' + (i + 1) + '</td>\n' +
+                '<td>' + list[i].getName() + '</td>\n' +
+                '<td>' + list[i].getBienso() + '</td>\n' +
+                '<td>' + list[i].getNamsinh() + '</td>\n' +
+                '<td>' + list[i].getCccd() + '</td>\n' +
+                '<td>' + list[i].getChoo() + '</td>\n' +
+                '<td><button onclick="deleteHangXe('+i+')">Delete</button></td>\n' +
+                '</tr>'
+      }
+      tableString += '</table>';
+      document.getElementById("result").innerHTML = tableString;
+    }
+</script>
+</body>
+</html>

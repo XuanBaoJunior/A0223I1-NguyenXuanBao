@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input onblur="checkId()" type="text" id="maso" placeholder="Nhập mã số" > <span id="error_id"> </span>
+<br>
+<input type="text" id="loaitietkiem" placeholder="Nhập loại tiết kiệm">
+<br>
+<input onblur="checkName()" type="text" id="hotenkhachhang" placeholder="Nhập họ tên"> <span id="error_name"></span>
+<br>
+<input onblur="checkCmnd()" type="text" id="cmnd" placeholder="Nhập chứng minh nhân dân"> <span id="error_cmnd"></span>
+<br>
+<input type="text" id="ngaymoso" placeholder="Nhập ngày mở sổ">
+<br>
+<input type="text" id="sotiengui" placeholder="Nhập số tiền gửi">
+<br>
+<button onclick="addSoTietKiem()">Thêm mới</button>
+<p id="result"></p>
+<script>
+    class SoTietKiem {
+        constructor(maso, loaitietkiem, hotenkhachhang, cmnd, ngaymoso, sotiengui) {
+            this.maso = maso;
+            this.loaitietkiem = loaitietkiem;
+            this.hotenkhachhang = hotenkhachhang;
+            this.cmnd = cmnd;
+            this.ngaymoso = ngaymoso;
+            this.sotiengui = sotiengui;
+        }
+
+        setMaso(maso) {
+            this.maso = maso;
+        }
+
+        setLoaitietkiem(loaitietkiem) {
+            this.loaitietkiem = loaitietkiem;
+        }
+
+        setHoten(hotenkhachhang) {
+            this.hotenkhachhang = hotenkhachhang;
+        }
+
+        setCmnd(cmnd) {
+            this.cmnd = cmnd;
+        }
+
+        setNgaymoso(ngaymoso) {
+            this.ngaymoso = ngaymoso;
+        }
+
+        setSotiengui(sotiengui){
+            this.sotiengui = sotiengui;
+        }
+
+        getMaso() {
+            return this.maso;
+        }
+
+        getLoaitietkiem() {
+            return this.loaitietkiem;
+        }
+
+        getHotenkhachhang() {
+            return this.hotenkhachhang;
+        }
+
+        getCmnd() {
+            return this.cmnd;
+        }
+
+        getNgaymoso() {
+            return this.ngaymoso;
+        }
+
+        getSotiengui(){
+            return this.sotiengui;
+        }
+    }
+
+    let sotietkiemList = [];
+    let sotietkiem1 = new SoTietKiem(1, "12 tháng", "Bảo", "123456789", "10/10/2023", "10000000");
+    let sotietkiem2 = new SoTietKiem(2, "11 tháng", "Bảo", "987654321", "10/10/2021", "10000000");
+    sotietkiemList.push(sotietkiem1, sotietkiem2);
+    display(sotietkiemList);
+
+    function deleteSoTietKiem(index) {
+        let xoa = confirm("Đồng ý xóa: " + sotietkiemList[index].getMaso())
+        if (xoa) {
+            sotietkiemList.splice(index, 1);
+        }
+        display(sotietkiemList);
+    }
+
+    function checkId() {
+        let id = document.getElementById('maso').value;
+        let check_error_id = document.getElementById('error_id');
+        if( id == "" || id == null ||  id.length >= 6 || isNaN(id)){
+            check_error_id.innerHTML = "<span style='color: red'> Id sai cú pháp</span>";
+            return false;
+        }else{
+            check_error_id.innerHTML = "";
+            return id;
+        }
+    }
+
+    function checkName() {
+        let idName = document.getElementById('hotenkhachhang').value;
+        let check_error_name = document.getElementById('error_name');
+        if(idName == "" || idName == null  || !isNaN(idName)){
+            check_error_name.innerHTML = "<span style='color: red'> Họ tên sai cú pháp </span>";
+        }else{
+            check_error_name.innerHTML = "";
+            return idName;
+        }
+    }
+
+    function checkCmnd() {
+        let id = document.getElementById('cmnd').value;
+        let check_error_id = document.getElementById('error_cmnd');
+        if( id == "" || id == null ||  id.length >= 13 || isNaN(id)){
+            check_error_id.innerHTML = "<span style='color: red'> CMND sai cú pháp</span>";
+            return false;
+        }else{
+            check_error_id.innerHTML = "";
+            return id;
+        }
+    }
+    function addSoTietKiem() {
+        let maso = document.getElementById("maso").value;
+        let loaitietkiem = document.getElementById("loaitietkiem").value;
+        let hotenkhachhang = document.getElementById("hotenkhachhang").value;
+        let cmnd = document.getElementById("cmnd").value;
+        let ngaymoso = document.getElementById("ngaymoso").value;
+        let sotiengui = document.getElementById("sotiengui").value;
+        let newSoTietKiem = new SoTietKiem(maso, loaitietkiem, hotenkhachhang, cmnd, ngaymoso, sotiengui);
+        sotietkiemList.push(newSoTietKiem);
+        document.getElementById("maso").value = "";
+        document.getElementById("loaitietkiem").value = "";
+        document.getElementById("hotenkhachhang").value = "";
+        document.getElementById("cmnd").value = "";
+        document.getElementById("ngaymoso").value = "";
+        document.getElementById("sotiengui").value = "";
+        display(sotietkiemList);
+    }
+    function display(list) {
+        let tableString = '<table border="1" style="border-collapse: collapse">\n' +
+            ' <tr>\n' +
+            ' <th>STT</th>\n' +
+            '  <th>Mã số</th>\n' +
+            ' <th>Loại tiết kiệm</th>\n' +
+            '  <th>Họ tên</th>\n' +
+            '  <th>CMND</th>\n' +
+            '  <th>Ngày mở sổ</th>\n' +
+            '  <th>Số tiền gửi</th>\n' +
+            '  <th>Delete</th>\n' +
+            ' </tr>';
+        for (let i = 0; i < list.length; i++) {
+            tableString += '<tr>\n' +
+                '<td>' + (i + 1) + '</td>\n' +
+                '<td>' + list[i].getMaso() + '</td>\n' +
+                '<td>' + list[i].getLoaitietkiem() + '</td>\n' +
+                '<td>' + list[i].getHotenkhachhang() + '</td>\n' +
+                '<td>' + list[i].getCmnd() + '</td>\n' +
+                '<td>' + list[i].getNgaymoso() + '</td>\n' +
+                '<td>' + list[i].getSotiengui() + '</td>\n' +
+                '<td><button onclick="deleteSoTietKiem('+i+')">Delete</button></td>\n' +
+                '</tr>'
+        }
+        tableString += '</table>';
+        document.getElementById("result").innerHTML = tableString;
+    }
+</script>
+</body>
+</html>

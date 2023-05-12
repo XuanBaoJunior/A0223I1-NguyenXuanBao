@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function prefixSums(a) {
+    let b = [];
+
+    if (a.length === 0) {
+      return b;
+    }
+
+    b[0] = a[0];
+
+    for (let i = 1; i < a.length; i++) {
+      b[i] = b[i-1] + a[i];
+    }
+
+    return b;
+  }
+
+  let a = [1, 2, 3];
+  let b = prefixSums(a);
+
+  console.log(b);
+</script>
+</body>
+</html>
