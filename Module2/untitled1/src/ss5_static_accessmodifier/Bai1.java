@@ -15,18 +15,22 @@ public class Bai1 {
     }
 
     public double getRadius() {
+
         return radius;
     }
 
     public double getArea() {
+
         return Math.PI * radius * radius;
     }
 
     public String getColor() {
+
         return color;
     }
 
     public void setColor(String color) {
+
         this.color = color;
     }
 }

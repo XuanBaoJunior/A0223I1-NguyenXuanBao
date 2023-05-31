@@ -10,18 +10,22 @@ public class Bai2 {
     }
 
     public long getStartTime() {
+
         return startTime;
     }
 
     public long getEndTime() {
+
         return endTime;
     }
 
     public void start() {
+
         startTime = System.currentTimeMillis();
     }
 
     public void stop() {
+
         endTime = System.currentTimeMillis();
     }
 
