@@ -2,8 +2,8 @@ package ss10_mvc.codegym.com.view;
 
 import ss10_mvc.codegym.com.controller.StudentController;
 import ss10_mvc.codegym.com.model.Student;
+import ss10_mvc.codegym.com.repository.IStudentRepository;
 import ss10_mvc.codegym.com.repository.StudentRepository;
-import ss10_mvc.codegym.com.repository.StudentRepositoryImpl;
 import ss10_mvc.codegym.com.service.StudentService;
 
 import java.util.Scanner;
@@ -22,7 +22,7 @@ public class Main {
         Student student2 = new Student(0, "Nguyễn Văn B", 22);
         Student student3 = new Student(0, "Nguyễn Văn C", 21);
 
-        StudentRepository studentRepository = new StudentRepositoryImpl();
+        IStudentRepository studentRepository = new StudentRepository();
         studentRepository.addStudent(student1);
         studentRepository.addStudent(student2);
         studentRepository.addStudent(student3);

@@ -1,12 +1,12 @@
 package ss10_mvc.codegym.com.service;
 
 import ss10_mvc.codegym.com.model.Student;
-import ss10_mvc.codegym.com.repository.StudentRepository;
+import ss10_mvc.codegym.com.repository.IStudentRepository;
 
 public class StudentService {
-    private StudentRepository studentRepository;
+    private IStudentRepository studentRepository;
 
-    public StudentService(StudentRepository studentRepository) {
+    public StudentService(IStudentRepository studentRepository) {
         this.studentRepository = studentRepository;
     }
 
