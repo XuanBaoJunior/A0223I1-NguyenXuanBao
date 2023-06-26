@@ -1,23 +1,34 @@
 package demo_writefilereadfile;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
+import java.io.*;
 
 public class Main {
-    public static void main(String[] args) {
-        String txt = "NguyenXuanBao";
-        String arr[] = {"32"};
-        try {
-            FileWriter ten = new FileWriter("data.txt");
-            BufferedWriter doc = new BufferedWriter(ten);
-            for (String s : arr){
-                doc.write(s);
-                doc.newLine();
-            }
-            ten.close();
-            doc.close();
-        }catch (Exception e){
+    public static void main(String[] args) throws IOException {
+            String a[] = new String[5];
+            a[0] = "Macbook";
+            a[1] = "Dell";
+            a[2] = "Acer";
+            a[3] = "Lenovo";
+            a[4] = "Asus";
 
-        }
+            File file = new File("data.txt");
+            OutputStream outputStream = new FileOutputStream(file);
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream);
+            for (String item : a){
+                    outputStreamWriter.write(item);
+                    outputStreamWriter.flush();
+            }
+
+
+//        File file = new File("data.txt");
+//        InputStream inputStream = new FileInputStream(file);
+//        InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+//        BufferedReader reader = new BufferedReader(inputStreamReader);
+//
+//        String line = "";
+//        while ((line = reader.readLine()) != null){
+//            System.out.println(line);
+//        }
+
     }
 }
