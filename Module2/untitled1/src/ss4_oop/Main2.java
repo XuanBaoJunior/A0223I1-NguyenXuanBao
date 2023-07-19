@@ -11,7 +11,6 @@ public class Main2 {
 
         stopwatch.stop();
 
-
         long elapsedTime = stopwatch.getElapsedTime();
         System.out.println("Elapsed Time: " + elapsedTime + " milliseconds");
     }

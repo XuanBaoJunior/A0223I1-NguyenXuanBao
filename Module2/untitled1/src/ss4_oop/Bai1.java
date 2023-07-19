@@ -40,16 +40,18 @@ public class Bai1 {
             if (hasRealRoots()) {
                 return (-b + Math.sqrt(getDiscriminant())) / (2 * a);
             } else {
-                throw new ArithmeticException("Không tồn tại");
+                System.out.println("Không tồn tại");
             }
+            return 0;
         }
 
         public double getRoot2() {
             if (hasRealRoots()) {
                 return (-b - Math.sqrt(getDiscriminant())) / (2 * a);
             } else {
-                throw new ArithmeticException("Không tồn tại");
+                System.out.println("Không tồn tại");
             }
+            return 0;
         }
     }
 
