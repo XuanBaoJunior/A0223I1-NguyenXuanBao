@@ -1,4 +1,4 @@
-package ss4_oop;
+package ss4_oop.Bai3;
 
 public class Bai3 {
     public static final int SLOW = 1;

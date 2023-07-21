@@ -1,6 +1,6 @@
-package ss4_oop;
+package ss4_oop.Bai3;
 
-public class Main3 {
+public class Main {
     public static void main(String[] args) {
         Bai3 fan1 = new Bai3();
         fan1.setSpeed(Bai3.FAST);

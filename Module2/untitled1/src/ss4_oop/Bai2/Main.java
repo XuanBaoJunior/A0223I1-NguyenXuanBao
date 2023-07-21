@@ -1,6 +1,8 @@
-package ss4_oop;
+package ss4_oop.Bai2;
 
-public class Main2 {
+import ss4_oop.Bai2.Bai2;
+
+public class Main {
     public static void main(String[] args) {
         Bai2 stopwatch = new Bai2();
 

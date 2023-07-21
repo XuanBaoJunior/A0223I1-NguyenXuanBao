@@ -1,4 +1,4 @@
-package ss4_oop;
+package ss4_oop.Bai2;
 
 
 public class Bai2 {

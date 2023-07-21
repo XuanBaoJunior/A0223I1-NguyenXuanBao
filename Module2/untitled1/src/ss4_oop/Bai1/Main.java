@@ -1,6 +1,8 @@
-package ss4_oop;
+package ss4_oop.Bai1;
 
-    public class Main {
+import ss4_oop.Bai1.Bai1;
+
+public class Main {
         public static void main(String[] args) {
             Bai1 equation = new Bai1(1, -3, 2);
             if (equation.hasRealRoots()) {

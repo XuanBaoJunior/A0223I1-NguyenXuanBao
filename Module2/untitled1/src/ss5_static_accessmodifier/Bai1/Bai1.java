@@ -1,4 +1,4 @@
-package ss5_static_accessmodifier;
+package ss5_static_accessmodifier.Bai1;
 
 public class Bai1 {
     private double radius;

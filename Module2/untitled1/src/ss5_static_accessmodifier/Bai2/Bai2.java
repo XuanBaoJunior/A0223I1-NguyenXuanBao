@@ -1,4 +1,4 @@
-package ss5_static_accessmodifier;
+package ss5_static_accessmodifier.Bai2;
 
 public class Bai2 {
     private String name;

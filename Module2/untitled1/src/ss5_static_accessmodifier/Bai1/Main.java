@@ -1,6 +1,8 @@
-package ss5_static_accessmodifier;
+package ss5_static_accessmodifier.Bai1;
 
-public class Main1 {
+import ss5_static_accessmodifier.Bai1.Bai1;
+
+public class Main {
     public static void main(String[] args) {
         Bai1 circle = new Bai1(2.5);
 

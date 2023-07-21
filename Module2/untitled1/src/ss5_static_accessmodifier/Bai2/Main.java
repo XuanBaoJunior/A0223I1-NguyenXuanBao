@@ -1,6 +1,8 @@
-package ss5_static_accessmodifier;
+package ss5_static_accessmodifier.Bai2;
 
-public class Main2 {
+import ss5_static_accessmodifier.Bai2.Bai2;
+
+public class Main {
     public static void main(String[] args) {
         Bai2 student = new Bai2();
 
