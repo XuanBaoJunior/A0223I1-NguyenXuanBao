@@ -1,6 +1,5 @@
 package ss5_static_accessmodifier.Bai1;
 
-import ss5_static_accessmodifier.Bai1.Bai1;
 
 public class Main {
     public static void main(String[] args) {
