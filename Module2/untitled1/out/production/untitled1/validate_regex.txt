@@ -1,0 +1,59 @@
+//validate name cho phép nhập chữ
+private boolean isValidName(String name) {
+        return name.matches("[A-Za-z\\s]+");
+    }
+//validate age
+private int getValidAge() {
+        int age;
+        while (true) {
+            try {
+                age = Integer.parseInt(scanner.nextLine());
+                if (age < 1 || age > 100) {
+                    System.out.println("Tuổi phải nằm trong khoảng từ 1 đến 100. Vui lòng nhập lại:");
+                } else {
+                    break;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Tuổi không hợp lệ. Vui lòng nhập lại:");
+            }
+        }
+        return age;
+    }
+//validate price
+private static double getValidPrice() {
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("Nhập giá (phải lớn hơn 50 đồng): ");
+            String input = scanner.nextLine();
+
+            try {
+                double price = Double.parseDouble(input);
+
+                if (price > 50.0) {
+                    return price;
+                } else {
+                    System.out.println("Giá không hợp lệ. Giá phải lớn hơn 50 đồng. Vui lòng nhập lại.");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Giá không hợp lệ. Vui lòng nhập lại.");
+            }
+        }
+    }
+//validate bat buoc nhap khong duoc bo trong
+public static String getValidProducer(Scanner scanner) {
+        String nhaSanXuat;
+        do {
+            System.out.println("Nhập nhà sản xuất: ");
+            nhaSanXuat = scanner.nextLine();
+            if (nhaSanXuat.isEmpty()) {
+                System.out.println("Bạn chưa nhập nhà sản xuất. Vui lòng nhập lại.");
+            }
+        } while (nhaSanXuat.isEmpty());
+
+        return nhaSanXuat;
+    }
+//validate regex bắt buộc nhập và a-z A-Z
+private boolean isValidName(String name) {
+            return name.matches("^(.+$|[A-Za-z\\s]+)$");
+    }

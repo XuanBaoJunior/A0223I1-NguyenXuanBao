@@ -2,7 +2,7 @@ package ss14_arrange.Bai2;
 
 public class InsertionSortAlgorithmTwo {
     public static void main(String[] args) {
-        int[] arr = {12, 11, 13, 5, 6};
+        int[] arr = {97, 12, 11, 13, 5, 6};
         System.out.println("Mảng ban đầu:");
         printArray(arr);
 

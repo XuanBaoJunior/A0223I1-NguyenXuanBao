@@ -1,13 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a836988-5a2d-4204-8729-bb426eeb1b98" name="Changes" comment="" />
+    <list default="true" id="5a836988-5a2d-4204-8729-bb426eeb1b98" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/untitled1/src/BaiTap_QuanLyDienThoai/controller/QLDienThoaiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/BaiTap_QuanLyDienThoai/model/QLDienThoai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/BaiTap_QuanLyDienThoai/repository/QLDienThoaiRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/BaiTap_QuanLyDienThoai/service/QLDienThoaiServicerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/BaiTap_QuanLyDienThoai/service/Servicer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/BaiTap_QuanLyDienThoai/views/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/caseStudy_module2/controller/FuramaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/caseStudy_module2/model/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/caseStudy_module2/model/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/caseStudy_module2/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/caseStudy_module2/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/caseStudy_module2/model/Facility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/caseStudy_module2/model/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/caseStudy_module2/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/caseStudy_module2/model/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/caseStudy_module2/model/Villa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/caseStudy_module2/servicer/FuramaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/caseStudy_module2/servicer/Servicer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien/controller/HospitalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien/model/Doctor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien/model/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien/repository/DoctorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien/repository/PatientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien/servicer/HospotalServicelImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien/servicer/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien/views/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien1/controller/HospitalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien1/model/Doctor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien1/model/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien1/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien1/repository/DoctorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien1/repository/PatientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien1/servicer/HospotalServicerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien1/servicer/Servicer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/demo_baithibenhvien1/views/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/validate_regex.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuditModule2.docx" beforeDir="false" afterPath="$PROJECT_DIR$/AuditModule2.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BỘ CÂU HỎI 48 CÂU CƠ BẢN.docx" beforeDir="false" afterPath="$PROJECT_DIR$/BỘ CÂU HỎI 48 CÂU CƠ BẢN.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/out/production/untitled1/demo_baithi/data/student.csv" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/out/production/untitled1/demo_baithi/data/student.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/out/production/untitled1/demo_baithi/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/out/production/untitled1/demo_baithi/model/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/out/production/untitled1/demo_baithi/repository/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/out/production/untitled1/demo_baithi/repository/StudentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/out/production/untitled1/ss14_arrange/Bai2/InsertionSortAlgorithmTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/out/production/untitled1/ss14_arrange/Bai2/InsertionSortAlgorithmTwo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/out/production/untitled1/ss20_case_study/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/out/production/untitled1/ss20_case_study/model/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/out/production/untitled1/ss20_case_study/model/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/out/production/untitled1/ss20_case_study/model/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/src/demo_baithi/data/student.csv" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/src/demo_baithi/data/student.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/src/demo_baithi/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/src/demo_baithi/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/src/demo_baithi/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/src/demo_baithi/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1/src/ss14_arrange/Bai2/InsertionSortAlgorithmTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled1/src/ss14_arrange/Bai2/InsertionSortAlgorithmTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$ CÂU HỎI 48 CÂU CƠ BẢN.docx" beforeDir="false" afterPath="$PROJECT_DIR$/~$ CÂU HỎI 48 CÂU CƠ BẢN.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$ditModule2.docx" beforeDir="false" afterPath="$PROJECT_DIR$/~$ditModule2.docx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="2PbCTEB0dvtIpe8e7LJtxHQPyki" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -69,6 +125,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
@@ -90,6 +147,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683716401783</updated>
       <workItem from="1683716404274" duration="50000" />
+      <workItem from="1694613153173" duration="12000" />
     </task>
     <servers />
   </component>
