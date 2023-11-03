@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Giao diện Facebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* CSS cho Header */
+        header {
+            background-color: #1877f2;
+            color: #fff;
+            padding: 3px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        /* CSS cho Sidebar */
+        aside {
+            background-color: #f0f2f5;
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+        }
+
+        /* CSS cho nội dung chính */
+        main {
+            margin-left: 270px; /* Đảm bảo nội dung chính không bị che khuất bởi sidebar */
+            padding: 20px;
+        }
+
+        /* CSS cho các mục menu bên trái */
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            padding: 10px;
+        }
+
+        aside ul li a {
+            text-decoration: none;
+            color: #000;
+            display: block;
+        }
+
+        aside ul li a:hover {
+            background-color: #e3e5e8;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Facebook</h1>
+</header>
+<aside>
+    <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Hồ sơ</a></li>
+        <li><a href="#">Bạn bè</a></li>
+        <li><a href="#">Thông báo</a></li>
+        <li><a href="#">Messenger</a></li>
+    </ul>
+</aside>
+<main>
+    <h2>Nội dung chính</h2>
+    <p>Đây là nội dung chính của trang Facebook.</p>
+</main>
+</body>
+</html>

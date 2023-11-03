@@ -1,6 +1,8 @@
-CREATE DATABASE QuanLySinhVien;
+CREATE
+DATABASE QuanLySinhVien;
 
-USE QuanLySinhVien;
+USE
+QuanLySinhVien;
 
 CREATE TABLE Class
 (
@@ -60,28 +62,36 @@ VALUES (1, 'CF', 5, 1),
        (2, 'C', 6, 1),
        (3, 'HDJ', 5, 1),
        (4, 'RDBMS', 10, 1);
-       
+
 INSERT INTO Mark (SubId, StudentId, Mark, ExamTimes)
 VALUES (1, 1, 8, 1),
        (1, 2, 10, 2),
        (2, 1, 12, 1);
-       
-select * from student where StudentName like 'h%';
 
-select * from class where month(StartDate) = 12;
+select *
+from student
+where StudentName like 'h%';
 
-select * from subject where credit between 3 and 5;
+select *
+from class
+where month (StartDate) = 12;
 
-set sql_safe_updates = 0;
+select *
+from subject
+where credit between 3 and 5;
+
+set
+sql_safe_updates = 0;
 
 update Student
 set ClassId = 2
 where StudentName = 'Hung';
 
-set sql_safe_updates = 1;
+set
+sql_safe_updates = 1;
 
 select s.StudentName, sb.SubName, m.Mark
 from Student s
-join Mark m on s.StudentId = m.StudentId
-join Subject sb on m.SubId = sb.SubId
+         join Mark m on s.StudentId = m.StudentId
+         join Subject sb on m.SubId = sb.SubId
 order by m.Mark desc, s.StudentName asc;

@@ -1,4 +1,5 @@
-use quanlysinhvien;
+use
+quanlysinhvien;
 
 SELECT *
 FROM Student
@@ -6,7 +7,7 @@ WHERE StudentName LIKE 'H%';
 
 SELECT *
 FROM Class
-WHERE MONTH(StartDate) = 12;
+WHERE MONTH (StartDate) = 12;
 
 SELECT *
 FROM Subject
@@ -18,7 +19,7 @@ WHERE StudentName = 'Hung';
 
 SELECT s.StudentName, sb.SubName, m.Mark
 FROM Student s
-JOIN Mark m ON s.StudentId = m.StudentId
-JOIN Subject sb ON m.SubId = sb.SubId
+         JOIN Mark m ON s.StudentId = m.StudentId
+         JOIN Subject sb ON m.SubId = sb.SubId
 ORDER BY m.Mark DESC, s.StudentName ASC;
 
