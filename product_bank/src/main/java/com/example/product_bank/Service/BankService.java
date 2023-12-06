@@ -11,6 +11,7 @@ public class BankService implements IBankService{
     @Override
     public List<Bank> findAll() {
         return iBankRepository.findAll();
+
     }
 
     @Override

@@ -34,39 +34,17 @@ public class StudentRepositoryImpl implements StudentRepository{
 
     @Override
     public void create(Student student) {
-//        try(Connection connection = BaseRepository.getConnectionJavaToDB();
-//            PreparedStatement preparedStatement = connection.prepareStatement(CREATE);) {
-//            preparedStatement.setString(1,student.getName_student());
-//            preparedStatement.setString(2,student.getClass_student());
-//            preparedStatement.executeUpdate();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
+
     }
 
     @Override
     public void update(Student student) {
-//        try(Connection connection = BaseRepository.getConnectionJavaToDB();
-//            PreparedStatement preparedStatement = connection.prepareStatement(UPDATE);) {
-//            preparedStatement.setString(1,student.getName_student());
-//            preparedStatement.setString(2,student.getClass_student());
-//            preparedStatement.setInt(3, student.getId_student());
-//            preparedStatement.executeUpdate();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
+
     }
 
     @Override
     public void delete(String id) {
-//        Connection connection = BaseRepository.getConnectionJavaToDB();
-//        try {
-//            PreparedStatement preparedStatement = connection.prepareStatement(DELETE);
-//            preparedStatement.setString(1,id);
-//            preparedStatement.executeUpdate();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
+
     }
 
     @Override
@@ -80,9 +58,6 @@ public class StudentRepositoryImpl implements StudentRepository{
 
             if (resultSet.next()) {
 
-//                student.setId_student(resultSet.getInt(1));
-//                student.setName_student(resultSet.getString(2));
-//                student.setClass_student(resultSet.getString(3));
                 String nameStudent = resultSet.getString("name_student");
                 String classStudent = resultSet.getString("class_student");
                 student = new Student(id,nameStudent,classStudent);

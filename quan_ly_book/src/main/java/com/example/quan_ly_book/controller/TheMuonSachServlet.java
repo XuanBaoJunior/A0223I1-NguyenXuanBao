@@ -72,7 +72,6 @@ public class TheMuonSachServlet extends HttpServlet {
 
             try {
                 request.getRequestDispatcher("/list.jsp").forward(request, response);
-//                response.sendRedirect("/listbook.jsp");
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (ServletException e) {
@@ -98,7 +97,6 @@ public class TheMuonSachServlet extends HttpServlet {
 
         try {
             request.getRequestDispatcher("/muonsach.jsp").forward(request, response);
-//            response.sendRedirect("/listbook.jsp");
         } catch (IOException | ServletException e) {
             e.printStackTrace();
         }
@@ -131,15 +129,7 @@ public class TheMuonSachServlet extends HttpServlet {
     }
 
     private void searchByTheMuonSach(HttpServletRequest request, HttpServletResponse response) {
-//        String searchByMM = request.getParameter("searchByMaMuon");
-//        request.setAttribute("theMuonSachList", the_muon_sachService.findByIDSach(searchByMM));
-//        try {
-//            request.getRequestDispatcher("/list.jsp").forward(request, response);
-//        } catch (ServletException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+
     }
 
     private void findAllTheMuonSach(HttpServletRequest request, HttpServletResponse response) {

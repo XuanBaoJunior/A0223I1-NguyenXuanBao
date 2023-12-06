@@ -36,43 +36,17 @@ public class BookRepositoryImpl implements BookRepository{
 
     @Override
     public void create(Book book) {
-//        try(Connection connection = BaseRepository.getConnectionJavaToDB();
-//            PreparedStatement preparedStatement = connection.prepareStatement(CREATE);) {
-//            preparedStatement.setString(1,book.getName_book());
-//            preparedStatement.setString(2,book.getAuthor());
-//            preparedStatement.setString(3,book.getQuatity());
-//            preparedStatement.setString(4,book.getDescription());
-//            preparedStatement.executeUpdate();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
+
             }
 
     @Override
     public void update(Book book) {
-//        try(Connection connection = BaseRepository.getConnectionJavaToDB();
-//            PreparedStatement preparedStatement = connection.prepareStatement(CREATE);) {
-//            preparedStatement.setString(1,book.getName_book());
-//            preparedStatement.setString(2,book.getAuthor());
-//            preparedStatement.setString(3,book.getQuatity());
-//            preparedStatement.setString(4,book.getDescription());
-//            preparedStatement.setInt(5,book.getId_book());
-//            preparedStatement.executeUpdate();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
+
     }
 
     @Override
     public void delete(String id) {
-//        Connection connection = BaseRepository.getConnectionJavaToDB();
-//        try {
-//            PreparedStatement preparedStatement = connection.prepareStatement(DELETE);
-//            preparedStatement.setInt(1,id);
-//            preparedStatement.executeUpdate();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
+
     }
 
     @Override
@@ -85,11 +59,7 @@ public class BookRepositoryImpl implements BookRepository{
             ResultSet resultSet = preparedStatement.executeQuery();
 
             if (resultSet.next()) {
-//                book.setId_book(resultSet.getInt(1));
-//                book.setName_book(resultSet.getString(2));
-//                book.setAuthor(resultSet.getString(3));
-//                book.setQuatity(resultSet.getString(4));
-//                book.setDescription(resultSet.getString(5));
+
                 String nameBook = resultSet.getString("name_book");
                 String author = resultSet.getString("author");
                 String quantity = resultSet.getString("quatity");
