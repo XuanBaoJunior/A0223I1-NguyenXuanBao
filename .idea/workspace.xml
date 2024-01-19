@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bde83f0a-743c-4c2d-9c8d-917ae6472323" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/service/HopitalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/service/IHopitalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/service/IPatientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital_management/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hospital_management/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/repository/HoptialRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/repository/HoptialRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/repository/PatientRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/repository/PatientRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +45,7 @@
       <workItem from="1696426915969" duration="23000" />
       <workItem from="1697634392165" duration="213000" />
       <workItem from="1698029912161" duration="52000" />
+      <workItem from="1703502828004" duration="20000" />
     </task>
     <servers />
   </component>

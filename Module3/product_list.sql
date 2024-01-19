@@ -2,7 +2,7 @@ create database if not exists product_list;
 use product_list;
 
 create table if not exists Category (
-id int primary key auto_increment,
+id_category int primary key auto_increment,
 type varchar(255) not null
 );
 

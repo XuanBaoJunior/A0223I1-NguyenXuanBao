@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.head-link {
+    background-color: #eee;
+    overflow: hidden;
+}
+
+.head-link a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.head-link a:hover {
+    font-weight: bold;
+    color: #ff6600; /* Màu khi hover */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-content {
+    width: 30%;
+}
+
+.left-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-content li {
+    margin-bottom: 10px;
+}
+
+.right-content {
+    width: 65%;
+}
+
+video {
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
