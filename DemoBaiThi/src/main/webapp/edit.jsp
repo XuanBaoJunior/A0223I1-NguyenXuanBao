@@ -1,7 +1,7 @@
 <%--
   Created by IntelliJ IDEA.
   User: XuanBao
-  Date: 1/26/2024
+  Date: 1/31/2024
   Time: 7:23 PM
   To change this template use File | Settings | File Templates.
 --%>
@@ -67,7 +67,7 @@
         </tr>
         <tr>
             <div style="margin-top: 15px">
-                <button type="submit" class="btn btn-outline-primary">Create</button>
+                <button type="submit" class="btn btn-outline-primary">Update</button>
                 |
                 <a href="/products" class="btn btn-outline-primary" role="button">Back</a>
             </div>

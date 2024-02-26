@@ -1,7 +1,7 @@
 <%--
   Created by IntelliJ IDEA.
   User: XuanBao
-  Date: 1/26/2024
+  Date: 1/31/2024
   Time: 7:23 PM
   To change this template use File | Settings | File Templates.
 --%>
@@ -36,6 +36,14 @@
                 <a href="/products" class="btn btn-outline-primary" role="button">Cancel</a>
             </form>
 
+<%--            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action="/products?action=searchPrice" method="post"--%>
+<%--                  style="display: flex">--%>
+<%--                <input type="search" class="form-control form-control-dark" placeholder="Search..."--%>
+<%--                       aria-label="Search" style="margin-right: 15px" name="priceSearch">--%>
+<%--                <button type="submit" class="btn btn-outline-primary" style="margin-right: 5px">Search</button>--%>
+<%--                <a href="/products" class="btn btn-outline-primary" role="button">Cancel</a>--%>
+<%--            </form>--%>
+
         </div>
     </div>
 </header>
@@ -64,7 +72,7 @@
             <td>
                 <a href="/products?action=showEdit&id=${product.getId_product()}&category_id=${product.getCategory().getId()}"
                    class="btn btn-outline-primary"
-                   role="button">EDIT</a> |
+                   role="button">UPDATE</a> |
                 <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
                         data-bs-target="#exampleModal"
                         onclick="Click('${product.getId_product()}', '${product.getName()}')">

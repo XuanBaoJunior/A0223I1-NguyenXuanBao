@@ -15,6 +15,7 @@ public class ProductRepository implements IProductRepository{
     private final String UPDATE = "update Product set name = ?, price = ?, number = ?, color = ?, mota = ?, id = ? where id_product = ?";
     private final String DELETE = "delete from Product where id_product = ?";
     private final String SEARCH_NAME = "select p.*, c.type from Product p join Category c on p.id=c.id where p.name like ?";
+    private final String SEARCH_PRICE = "SELECT * FROM product WHERE price LIKE ? OR price LIKE ? OR price LIKE ?;";
 
     @Override
     public List<Product> display() {
@@ -148,4 +149,34 @@ public class ProductRepository implements IProductRepository{
         }
         return productList;
     }
+
+    public List<Product> searchByPrice(double price) {
+        List<Product> productList = new ArrayList<>();
+        try (
+        Connection connection = BaseRepository.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(SEARCH_PRICE);
+        ) {
+        preparedStatement.setDouble(1, price);
+        preparedStatement.setDouble(2, price);
+        preparedStatement.setDouble(3, price);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while (resultSet.next()) {
+        int id_product = resultSet.getInt("id_product");
+        String nameProduct = resultSet.getString("name");
+        Double productPrice = resultSet.getDouble("price");
+        int number = resultSet.getInt("number");
+        String color = resultSet.getString("color");
+        String mota = resultSet.getString("mota");
+        int id = resultSet.getInt("id");
+        String type = resultSet.getString("type");
+        Category category = new Category(id, type);
+        Product product = new Product(id_product, nameProduct, productPrice, number, color, mota, category);
+        productList.add(product);
+        }
+        } catch (SQLException e) {
+        throw new RuntimeException(e);
+        }
+        return productList;
+        }
 }
+

@@ -16,4 +16,6 @@ public interface IProductService {
     void delete(int id);
 
     List<Product> searchName(String name);
+
+    List<Product> searchByPrice(double price);
 }

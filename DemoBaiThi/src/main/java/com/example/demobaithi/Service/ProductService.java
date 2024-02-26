@@ -38,4 +38,9 @@ public class ProductService implements IProductService{
     public List<Product> searchName(String name) {
         return iProductRepository.searchName(name);
     }
+
+    @Override
+    public List<Product> searchByPrice(double price) {
+        return iProductRepository.searchByPrice(price);
+    }
 }

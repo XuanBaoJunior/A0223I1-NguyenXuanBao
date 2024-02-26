@@ -102,8 +102,24 @@ public class ProductServlet extends HttpServlet {
             case "searchList":
                 searchList(request, response);
                 break;
+            case "searchPrice":
+                searchPrice(request, response);
             default:
                 showListProduct(request, response);
+        }
+    }
+
+    private void searchPrice(HttpServletRequest request, HttpServletResponse response) {
+        Double priceSearch = Double.parseDouble(request.getParameter("priceSearch"));
+        List<Product> list = iProductService.searchByPrice(priceSearch);
+        request.setAttribute("list", list);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("list.jsp");
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -166,3 +182,4 @@ public class ProductServlet extends HttpServlet {
         }
     }
 }
+
