@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.table-responsive {
+    flex-grow: 1;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.pagination-container {
+    margin-top: auto;
+}
