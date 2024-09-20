@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<h1>Thêm mới</h1>
+<div class="container">
+    <form action="/loaixe/create" method="post" th:object="${loaiXe}">
+        <label>Name</label>
+        <input class="form-control" type="text" name="ten_loai_xe" th:field="*{ten_loai_xe}"/>
+        <label>Point</label>
+        <input class="form-control" type="number" name="gia_xe" th:field="*{gia_xe}"/>
+        <label>Id Card</label>
+        <input class="form-control" type="text" name="nam_san_xuat" th:field="*{nam_san_xuat}"/>
+        <label>Classroom</label>
+<!--        <select class="form-control" name="nuoc_san_xuat" th:field="*{nuoc_san_xuat}">-->
+<!--            <option th:each="classroom: ${classrooms}" th:value="${classroom}" th:text="${classroom}"></option>-->
+<!--        </select>-->
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,19 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bde83f0a-743c-4c2d-9c8d-917ae6472323" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/service/HopitalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/service/IHopitalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/service/IPatientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/service/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital_management/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hospital_management/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/repository/HoptialRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/repository/HoptialRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/repository/PatientRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital_management/src/main/java/com/example/hospital_management/repository/PatientRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoShopee/shopee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoShopee/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/bai_thi_module4/src/main/java/com/example/bai_thi_module4/Controller/QuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/bai_thi_module4/src/main/java/com/example/bai_thi_module4/Controller/QuestionRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/bai_thi_module4/src/main/java/com/example/bai_thi_module4/DTO/QuestionContentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/bai_thi_module4/src/main/java/com/example/bai_thi_module4/Model/QuestionContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/bai_thi_module4/src/main/java/com/example/bai_thi_module4/Model/QuestionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/bai_thi_module4/src/main/java/com/example/bai_thi_module4/Repository/IQuestionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/bai_thi_module4/src/main/java/com/example/bai_thi_module4/Repository/IQuestionTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/bai_thi_module4/src/main/java/com/example/bai_thi_module4/Service/IQuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/bai_thi_module4/src/main/java/com/example/bai_thi_module4/Service/IQuestionTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/bai_thi_module4/src/main/java/com/example/bai_thi_module4/Service/QuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/bai_thi_module4/src/main/java/com/example/bai_thi_module4/Service/QuestionTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/bai_thi_module4/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/bai_thi_module4/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi/src/main/java/com/example/demo_bai_thi/controllers/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi/src/main/java/com/example/demo_bai_thi/dto/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi/src/main/java/com/example/demo_bai_thi/models/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi/src/main/java/com/example/demo_bai_thi/models/ProductType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi/src/main/java/com/example/demo_bai_thi/repositories/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi/src/main/java/com/example/demo_bai_thi/repositories/IProductTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi/src/main/java/com/example/demo_bai_thi/services/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi/src/main/java/com/example/demo_bai_thi/services/IProductTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi/src/main/java/com/example/demo_bai_thi/services/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi/src/main/java/com/example/demo_bai_thi/services/ProductTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi/src/main/resources/templates/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi_test/src/main/java/com/example/demo_bai_thi_test/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi_test/src/main/java/com/example/demo_bai_thi_test/controller/ProductRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi_test/src/main/java/com/example/demo_bai_thi_test/dto/ProductDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi_test/src/main/java/com/example/demo_bai_thi_test/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi_test/src/main/java/com/example/demo_bai_thi_test/model/ProductType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi_test/src/main/java/com/example/demo_bai_thi_test/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi_test/src/main/java/com/example/demo_bai_thi_test/repository/IProductTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi_test/src/main/java/com/example/demo_bai_thi_test/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi_test/src/main/java/com/example/demo_bai_thi_test/service/IProductTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi_test/src/main/java/com/example/demo_bai_thi_test/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi_test/src/main/java/com/example/demo_bai_thi_test/service/ProductTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi_test/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_bai_thi_test/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_thi_module4/src/main/java/com/example/demo_thi_module4/Controller/QuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_thi_module4/src/main/java/com/example/demo_thi_module4/Controller/QuestionRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_thi_module4/src/main/java/com/example/demo_thi_module4/DTO/QuestionContentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_thi_module4/src/main/java/com/example/demo_thi_module4/Model/QuestionContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_thi_module4/src/main/java/com/example/demo_thi_module4/Model/QuestionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_thi_module4/src/main/java/com/example/demo_thi_module4/Repository/IQuestionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_thi_module4/src/main/java/com/example/demo_thi_module4/Repository/IQuestionTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_thi_module4/src/main/java/com/example/demo_thi_module4/Service/IQuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_thi_module4/src/main/java/com/example/demo_thi_module4/Service/IQuestionTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_thi_module4/src/main/java/com/example/demo_thi_module4/Service/QuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_thi_module4/src/main/java/com/example/demo_thi_module4/Service/QuestionTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_thi_module4/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/demo_thi_module4/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/ss9_borrow_book/src/main/java/com/example/ss9_borrow_book/models/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/ss9_borrow_book/src/main/java/com/example/ss9_borrow_book/models/BorrowedBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/ss9_borrow_book/src/main/java/com/example/ss9_borrow_book/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,19 +83,50 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2WIjDL2hCE5jNYAsfWsImPL1Sxe" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.shopee.html.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/CodeGym/A0223I1-NguyenXuanBao/Module5/ss2/excrcise",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="shopee.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/A0223I1-NguyenXuanBao/DemoShopee/shopee.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.shopee.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,7 +139,17 @@
       <workItem from="1697634392165" duration="213000" />
       <workItem from="1698029912161" duration="52000" />
       <workItem from="1703502828004" duration="20000" />
+      <workItem from="1713532712122" duration="39000" />
+      <workItem from="1715349928017" duration="189000" />
+      <workItem from="1715952005100" duration="1549000" />
+      <workItem from="1716381766207" duration="736000" />
+      <workItem from="1716384585337" duration="111000" />
+      <workItem from="1716384711023" duration="756000" />
+      <workItem from="1716550387989" duration="739000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

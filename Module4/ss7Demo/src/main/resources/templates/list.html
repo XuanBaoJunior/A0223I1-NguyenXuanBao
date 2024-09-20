@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <a href="/create">Create</a>
+    <h1>List</h1>
+    <table border="1" class="table table-hover" id="example">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Ten</th>
+            <th>Gia</th>
+            <th>Nam San Xuat</th>
+            <th>Nuoc San Xuat</th>
+            <th>UPDATE</th>
+            <th>DELETE</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="loaixe:${listLoaiXe}">
+            <td th:text="${loaixe.id_loai_xe}"></td>
+            <td th:text="${loaixe.ten_loai_xe}"></td>
+            <td th:text="${loaixe.gia_xe}"></td>
+            <td th:text="${loaixe.nam_san_xuat}"></td>
+            <td th:text="${loaixe.SanXuat.nuoc_san_xuat}"></td>
+            <td>
+                <button class="btn btn-primary"><a th:href="@{/loaixe/{code}/update (code = ${loaixe.id_loai_xe})}">Cập nhật</a></button>
+            </td>
+            <td>
+                <button class="btn btn-danger">Xóa</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Email chuong trinh</h1>
+<table>
+    <tr>
+        <td>Languages:</td>
+        <td th:text="${mailBox.languages}"></td>
+    </tr>
+    <tr>
+        <td>Page Size:</td>
+        <td th:text="${mailBox.size}"></td>
+    </tr>
+    <tr>
+        <td>Spams filter:</td>
+        <td th:text="${mailBox.filter}"></td>
+    </tr>
+    <tr>
+        <td>Signature:</td>
+        <td th:text="${mailBox.signature}"></td>
+    </tr>
+</table>
+<a th:href="@{/email/update}">Update</a>
+</body>
+</html>

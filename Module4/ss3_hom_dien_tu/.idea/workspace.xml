@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4fcdd0fd-f417-4d38-b3aa-1b98120c2c15" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../demo_Class/src/main/java/com/example/demo_class/DemoClassApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_Class/src/main/java/com/example/demo_class/controllers/TeacherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_Class/src/main/java/com/example/demo_class/models/ClassLH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_Class/src/main/java/com/example/demo_class/models/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_Class/src/main/java/com/example/demo_class/models/TeacherCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_Class/src/main/resources/templates/staff.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_Class/src/main/resources/templates/view-staffs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_test/src/main/java/com/example/demo_bai_test/controllers/StaffController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_test/src/main/java/com/example/demo_bai_test/models/Departs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_test/src/main/java/com/example/demo_bai_test/models/Records.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_test/src/main/java/com/example/demo_bai_test/models/Staffs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_test/src/main/java/com/example/demo_bai_test/repositories/StaffRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_test/src/main/java/com/example/demo_bai_test/services/StaffService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_test/src/main/java/com/example/demo_bai_test/services/StaffServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_test/src/main/resources/templates/staff.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_bai_test/src/main/resources/templates/view-staffs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_onetomany/src/main/java/com/example/demo_onetomany/controllers/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_onetomany/src/main/java/com/example/demo_onetomany/models/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_onetomany/src/main/java/com/example/demo_onetomany/models/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_onetomany/src/main/java/com/example/demo_onetomany/repositories/ICategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_onetomany/src/main/java/com/example/demo_onetomany/repositories/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_onetomany/src/main/java/com/example/demo_onetomany/services/ICategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_onetomany/src/main/java/com/example/demo_onetomany/services/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_onetomany/src/main/java/com/example/demo_onetomany/services/impl/CatogoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_onetomany/src/main/java/com/example/demo_onetomany/services/impl/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_onetomany/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3Mail/src/main/java/com/example/ss3mail/Controller/EmailConfigurationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3Mail/src/main/java/com/example/ss3mail/Model/EmailConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3Mail/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3Mail/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3Mail/src/main/webapp/WEB-INF/views/email-config.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ss3_hom_dien_tu/controller/MailBoxController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ss3_hom_dien_tu/model/MailBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ss3_hom_dien_tu/repository/IMailBoxRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ss3_hom_dien_tu/repository/MailBoxRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ss3_hom_dien_tu/service/IMailBoxService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ss3_hom_dien_tu/service/MailBoxService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/box.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/setting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_quan_ly_sp/src/main/java/com/example/ss4_quan_ly_sp/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_quan_ly_sp/src/main/java/com/example/ss4_quan_ly_sp/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_quan_ly_sp/src/main/java/com/example/ss4_quan_ly_sp/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_quan_ly_sp/src/main/java/com/example/ss4_quan_ly_sp/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_quan_ly_sp/src/main/java/com/example/ss4_quan_ly_sp/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_quan_ly_sp/src/main/java/com/example/ss4_quan_ly_sp/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_quan_ly_sp/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_quan_ly_sp/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_quan_ly_sp/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_quan_ly_sp/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_quan_ly_sp/src/main/webapp/WEB-INF/views/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_quan_ly_sp/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/java/com/example/ss5demo/controllers/LoaiXeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/java/com/example/ss5demo/models/LoaiXe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/java/com/example/ss5demo/models/SanXuat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/java/com/example/ss5demo/repositories/ILoaiXeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/java/com/example/ss5demo/repositories/ISanXuatRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/java/com/example/ss5demo/repositories/impl/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/java/com/example/ss5demo/repositories/impl/LoaiXeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/java/com/example/ss5demo/repositories/impl/SanXuatRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/java/com/example/ss5demo/services/ILoaiXeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/java/com/example/ss5demo/services/ISanXuatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/java/com/example/ss5demo/services/impl/LoaiXeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/java/com/example/ss5demo/services/impl/SanXuatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/resources/hibernate.conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5Demo/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7Demo/src/main/java/com/example/ss7demo/controllers/LoaiXeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7Demo/src/main/java/com/example/ss7demo/models/LoaiXe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7Demo/src/main/java/com/example/ss7demo/models/SanXuat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7Demo/src/main/java/com/example/ss7demo/repositories/ILoaiXeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7Demo/src/main/java/com/example/ss7demo/repositories/ISanXuatRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7Demo/src/main/java/com/example/ss7demo/services/ILoaiXeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7Demo/src/main/java/com/example/ss7demo/services/ISanXuatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7Demo/src/main/java/com/example/ss7demo/services/impl/LoaiXeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7Demo/src/main/java/com/example/ss7demo/services/impl/SanXuatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7Demo/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7Demo/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_ung_dung_blog/src/main/java/com/example/ss7_ung_dung_blog/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_ung_dung_blog/src/main/java/com/example/ss7_ung_dung_blog/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_ung_dung_blog/src/main/java/com/example/ss7_ung_dung_blog/controller/PostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_ung_dung_blog/src/main/java/com/example/ss7_ung_dung_blog/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_ung_dung_blog/src/main/java/com/example/ss7_ung_dung_blog/model/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_ung_dung_blog/src/main/java/com/example/ss7_ung_dung_blog/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_ung_dung_blog/src/main/java/com/example/ss7_ung_dung_blog/repository/PostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_ung_dung_blog/src/main/java/com/example/ss7_ung_dung_blog/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_ung_dung_blog/src/main/java/com/example/ss7_ung_dung_blog/service/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_ung_dung_blog/src/main/java/com/example/ss7_ung_dung_blog/service/PostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_ung_dung_blog/src/main/java/com/example/ss7_ung_dung_blog/service/PostServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_ung_dung_blog/src/main/resources/templates/categories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_ung_dung_blog/src/main/resources/templates/category-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_ung_dung_blog/src/main/resources/templates/posts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8Demo/src/main/java/com/example/ss8demo/controllers/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8Demo/src/main/java/com/example/ss8demo/dto/StudentListDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8Demo/src/main/java/com/example/ss8demo/models/Classroom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8Demo/src/main/java/com/example/ss8demo/models/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8Demo/src/main/java/com/example/ss8demo/repositories/IClassroomRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8Demo/src/main/java/com/example/ss8demo/repositories/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8Demo/src/main/java/com/example/ss8demo/services/IClassroomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8Demo/src/main/java/com/example/ss8demo/services/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8Demo/src/main/java/com/example/ss8demo/services/impl/ClassroomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8Demo/src/main/java/com/example/ss8demo/services/impl/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8Demo/src/main/java/com/example/ss8demo/utils/annotation/NameConstraint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8Demo/src/main/java/com/example/ss8demo/utils/annotation/NameValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8Demo/src/main/java/com/example/ss8demo/utils/custom_validation/StudentValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8Demo/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8Demo/src/main/resources/templates/list.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2e2csx1neG03vtL9CKk7qY2jdbl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build ss3_hom_dien_tu.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Tomcat Server.Tomcat 9.0.861.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/CodeGym/A0223I1-NguyenXuanBao/Module4/ss3_hom_dien_tu/src/main/java/com/example/ss3_hom_dien_tu",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.ss3_hom_dien_tu.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\CodeGym\A0223I1-NguyenXuanBao\Module4\ss3_hom_dien_tu\src\main\java\com\example\ss3_hom_dien_tu" />
+      <recent name="E:\CodeGym\A0223I1-NguyenXuanBao\Module4\ss3_hom_dien_tu\src\main\webapp\WEB-INF\views" />
+      <recent name="E:\CodeGym\A0223I1-NguyenXuanBao\Module4\ss3_hom_dien_tu\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.861" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.861" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : com.example : ss3_hom_dien_tu-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="9a6e26a2-b0db-48fc-8f4d-5d9486112883" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51955" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : ss3_hom_dien_tu-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-20.0.2-azul-20.0.2-4caba194b151-eb49e076" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4fcdd0fd-f417-4d38-b3aa-1b98120c2c15" name="Changes" comment="" />
+      <created>1711106326287</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711106326287</updated>
+      <workItem from="1711106328691" duration="1736000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
